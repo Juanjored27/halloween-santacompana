@@ -1,0 +1,81 @@
+<ion-header class="cabecera" [translucent]="true">
+  <ion-toolbar>
+    <ion-title>La Santa Compaña</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="pantalla" [fullscreen]="true">
+  <div class="contenedor">
+
+    <!-- Portada: imagen recogida, con el titulo encima -->
+    <figure class="hero">
+      <img src="assets/img/procesion.svg" alt="Procesión de ánimas encapuchadas con cirios entre la niebla" />
+      <figcaption class="hero__texto">
+        <span class="hero__ojo">Noche de Difuntos · Galicia</span>
+        <h1 class="titulo-decorativo hero__titulo">La Santa Compaña</h1>
+      </figcaption>
+    </figure>
+
+    <!-- Ficha rapida en etiquetas -->
+    <ul class="chips">
+      @for (etiqueta of etiquetas; track etiqueta) {
+        <li>{{ etiqueta }}</li>
+      }
+    </ul>
+
+    <!-- Frase terrorifica de presentacion -->
+    <blockquote class="frase">
+      «Si oyes campanas y no ves quién las toca, no abras la puerta:
+      ya están dentro del camino.»
+    </blockquote>
+
+    <!-- Uso del componente de la libreria halloween-ui -->
+    <hallow-monster-card
+      class="tarjeta-destacada"
+      imagen="assets/img/cirio.svg"
+      etiqueta="El monstruo"
+      titulo="El que camina delante"
+      texto="Abre la comitiva un alma condenada que carga un caldero de agua y una cruz de hueso.
+             Detrás, una fila de difuntos con cirios encendidos. Van en silencio, y el silencio
+             es lo que más asusta."
+      botonTexto="Encender mi cirio"
+      (accion)="alPulsarTarjeta($event)">
+    </hallow-monster-card>
+
+    <div class="erizo"></div>
+
+    <section>
+      <header class="cab-seccion">
+        <span class="cab-seccion__ojo">El mundo del monstruo</span>
+        <h2 class="cab-seccion__titulo">Una procesión que no es de este mundo</h2>
+      </header>
+
+      <p class="texto">
+        En Galicia se cuenta que, en las noches frías, sale del cementerio una comitiva de
+        almas en pena que recorre los caminos rezando en voz baja. Va al frente un vivo
+        condenado, y detrás los difuntos, cada uno con su cirio encendido.
+      </p>
+
+      <p class="texto">
+        No viene a por todos: viene a por uno. Pasa despacio delante de la casa de quien
+        va a morir ese año y se detiene un instante. Después sigue camino, y el pueblo entero
+        cierra puertas y ventanas hasta que canta el gallo.
+      </p>
+    </section>
+
+    <div class="erizo"></div>
+
+    <!-- Tres datos rapidos -->
+    <div class="datos">
+      @for (dato of datos; track dato.pie) {
+        <div class="dato">
+          <ion-icon [name]="dato.icono" aria-hidden="true"></ion-icon>
+          <span class="dato__cifra">{{ dato.cifra }}</span>
+          <span class="dato__pie">{{ dato.pie }}</span>
+        </div>
+      }
+    </div>
+
+    <p class="pie">halloween-santacompana · inicio</p>
+  </div>
+</ion-content>

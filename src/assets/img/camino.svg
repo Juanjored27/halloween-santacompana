@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="Encrucillada de caminos entre la niebla con una figura lejana">
+  <defs>
+    <linearGradient id="sky4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#06040c"/><stop offset=".5" stop-color="#1b1130"/><stop offset=".78" stop-color="#2a1a42"/><stop offset="1" stop-color="#09050f"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#332845"/><stop offset="1" stop-color="#151020"/>
+    </linearGradient>
+    <radialGradient id="halo4" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#dfe8ff" stop-opacity=".38"/>
+      <stop offset="1" stop-color="#dfe8ff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="f20"><feGaussianBlur stdDeviation="20"/></filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#sky4)"/>
+  <circle cx="620" cy="130" r="170" fill="url(#halo4)"/>
+  <circle cx="620" cy="130" r="40" fill="#eef1ff" opacity=".8"/>
+  <path d="M0 330 C 150 300 250 330 400 315 C 550 300 650 330 800 310 L800 600 L0 600 Z" fill="#0d0917"/>
+  <path d="M400 330 L640 600 L160 600 Z" fill="url(#road)" opacity=".85"/>
+  <path d="M400 330 L140 600 L60 600 Z" fill="url(#road)" opacity=".5"/>
+  <path d="M400 330 L680 600 L740 600 Z" fill="url(#road)" opacity=".45"/>
+  <g fill="#120d1c">
+    <path d="M300 330 L300 250 L318 250 L318 330 Z"/><path d="M290 262 L328 262" stroke="#120d1c" stroke-width="9"/>
+    <path d="M520 320 L520 268 L534 268 L534 320 Z"/><path d="M512 278 L542 278" stroke="#120d1c" stroke-width="7"/>
+  </g>
+  <g transform="translate(400,392) scale(.32)">
+    <path d="M0 -150 C-30 -150 -46 -100 -46 -46 C-46 0 -58 34 -66 64 L66 64 C58 34 46 0 46 -46 C46 -100 30 -150 0 -150 Z" fill="#07040e"/>
+    <rect x="30" y="-14" width="8" height="40" rx="4" fill="#e4dcc8"/>
+    <circle cx="34" cy="-26" r="60" fill="#ffb54d" opacity=".28"/>
+    <ellipse cx="34" cy="-26" rx="7" ry="13" fill="#ffe1a3"/>
+  </g>
+  <g filter="url(#f20)" opacity=".26">
+    <ellipse cx="400" cy="400" rx="420" ry="40" fill="#9fb0da"/>
+    <ellipse cx="200" cy="480" rx="300" ry="36" fill="#8fa4cf"/>
+    <ellipse cx="640" cy="500" rx="280" ry="30" fill="#8fa4cf"/>
+    <ellipse cx="400" cy="356" rx="260" ry="22" fill="#cfd8f5"/>
+  </g>
+  <path d="M0 560 C 220 540 580 540 800 560 L800 600 L0 600 Z" fill="#05030a"/>
+</svg>

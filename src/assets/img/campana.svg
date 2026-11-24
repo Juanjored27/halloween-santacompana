@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="Campana de bronce en el arco de una torre">
+  <defs>
+    <radialGradient id="bg3" cx=".5" cy=".4" r=".8">
+      <stop offset="0" stop-color="#241840"/><stop offset=".65" stop-color="#100b1b"/><stop offset="1" stop-color="#06040b"/>
+    </radialGradient>
+    <linearGradient id="bronze" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5d4a2a"/><stop offset=".3" stop-color="#c9a35c"/>
+      <stop offset=".55" stop-color="#8d7440"/><stop offset=".8" stop-color="#c9a35c"/><stop offset="1" stop-color="#4a3a20"/>
+    </linearGradient>
+    <radialGradient id="aro">
+      <stop offset="0" stop-color="#ffd89a" stop-opacity="0"/>
+      <stop offset=".7" stop-color="#ffd89a" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#ffd89a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg3)"/>
+  <path d="M150 600 L150 210 C150 90 650 90 650 210 L650 600 Z" fill="#0a0712"/>
+  <path d="M400 100 C 520 100 600 175 600 275 C 600 400 520 470 400 470 C 280 470 200 400 200 275 C 200 175 280 100 400 100 Z" fill="#150e22"/>
+  <circle cx="400" cy="250" r="230" fill="url(#aro)"/>
+  <circle cx="400" cy="70" r="10" fill="#0a0712"/>
+  <path d="M400 96 L400 130" stroke="#3a3244" stroke-width="6"/>
+  <path d="M400 132 C 470 132 500 210 500 300 C 500 360 470 396 452 410 L348 410 C 330 396 300 360 300 300 C 300 210 330 132 400 132 Z" fill="url(#bronze)"/>
+  <path d="M356 150 C 336 236 330 320 342 396" stroke="#f0d69b" stroke-width="7" opacity=".35" fill="none"/>
+  <path d="M348 410 C 360 440 440 440 452 410 Z" fill="#6d5731"/>
+  <ellipse cx="400" cy="410" rx="54" ry="12" fill="#3a2d19"/>
+  <circle cx="400" cy="434" r="13" fill="#c9a35c"/>
+  <g fill="none" stroke="#ffd89a" stroke-width="2" opacity=".22">
+    <path d="M260 300 C 240 250 240 200 262 160"/><path d="M540 300 C 560 250 560 200 538 160"/>
+    <path d="M215 330 C 190 265 190 190 220 140"/><path d="M585 330 C 610 265 610 190 580 140"/>
+  </g>
+  <path d="M0 470 C 260 450 540 450 800 470 L800 600 L0 600 Z" fill="#08060e"/>
+  <path d="M150 470 L150 600 M650 470 L650 600" stroke="#08060e" stroke-width="0"/>
+</svg>

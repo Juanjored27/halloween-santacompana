@@ -1,0 +1,98 @@
+<ion-header class="cabecera" [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Historia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="pantalla" [fullscreen]="true">
+  <div class="contenedor">
+
+    <header class="intro">
+      <span class="cab-seccion__ojo">Secretos y leyendas</span>
+      <h1 class="titulo-decorativo intro__titulo">La procesión de los que ya no están</h1>
+      <p class="entradilla">
+        Cuentan en Galicia que, en las noches frías, sale una comitiva de almas del purgatorio
+        que recorre los caminos rezando en voz baja. Va al frente un vivo, y detrás los difuntos,
+        cada uno con su cirio encendido.
+      </p>
+    </header>
+
+    <!-- Imagen de ambiente, en un marco con altura limitada -->
+    <figure class="marco marco--ancho ambiente">
+      <img src="assets/img/casa.svg" alt="Casa de piedra abandonada con una ventana iluminada" loading="lazy" />
+      <span class="marco__velo"></span>
+      <figcaption class="marco__pie">«Si llaman a tu puerta y no hay nadie, no vuelvas a abrirla.»</figcaption>
+    </figure>
+
+    <div class="erizo"></div>
+
+    <section>
+      <header class="cab-seccion">
+        <span class="cab-seccion__ojo">Procedencia</span>
+        <h2 class="cab-seccion__titulo">Del cementerio al camino</h2>
+      </header>
+      <p class="texto">
+        La leyenda es muy antigua y se pierde entre la religión y el miedo al monte. En muchos
+        pueblos se contaba que la Compaña salía del cementerio al oír la última campanada y
+        volvía antes del amanecer. No elegía a cualquiera: pasaba por delante de la casa de
+        quien iba a morir ese año, y se paraba un instante en su puerta.
+      </p>
+      <p class="texto">
+        El que abre la marcha carga una cruz hecha de huesos y un caldero de agua bendita.
+        Va descalzo, con la mirada perdida, y no puede hablar. Si alguien le quita la cruz,
+        el condenado queda libre… y el que se la quitó ocupa su lugar para siempre.
+      </p>
+    </section>
+
+    <div class="erizo"></div>
+
+    <section>
+      <header class="cab-seccion">
+        <span class="cab-seccion__ojo">Poderes y debilidades</span>
+        <h2 class="cab-seccion__titulo">Lo que puede y lo que teme</h2>
+      </header>
+      <p class="nota-seccion">
+        Las cuatro tarjetas son el mismo componente de la librería, con el contenido cambiado.
+      </p>
+
+      <!-- Componente reutilizado: ahora con las fichas de poderes y debilidades -->
+      @for (ficha of poderes; track ficha.titulo) {
+        <hallow-monster-card
+          class="ficha"
+          [imagen]="ficha.imagen"
+          [etiqueta]="ficha.etiqueta"
+          [titulo]="ficha.titulo"
+          [texto]="ficha.texto"
+          [botonTexto]="ficha.boton"
+          (accion)="abrirFicha($event)">
+        </hallow-monster-card>
+      }
+
+      @if (fichaAbierta) {
+        <p class="aviso">
+          <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+          <span>Has abierto la ficha «{{ fichaAbierta }}». Mejor no leerla en voz alta.</span>
+        </p>
+      }
+    </section>
+
+    <div class="erizo"></div>
+
+    <section>
+      <header class="cab-seccion">
+        <span class="cab-seccion__ojo">Curiosidades</span>
+        <h2 class="cab-seccion__titulo">Lo que se cuenta en Halloween</h2>
+      </header>
+      <ul class="lista">
+        @for (dato of curiosidades; track dato) {
+          <li>
+            <ion-icon name="flame-outline" aria-hidden="true"></ion-icon>
+            <span>{{ dato }}</span>
+          </li>
+        }
+      </ul>
+    </section>
+
+    <p class="pie">halloween-santacompana · historia</p>
+  </div>
+</ion-content>

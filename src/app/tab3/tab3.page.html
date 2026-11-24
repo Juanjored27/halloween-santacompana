@@ -1,0 +1,55 @@
+<ion-header class="cabecera" [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Galería</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="pantalla" [fullscreen]="true">
+  <div class="contenedor">
+
+    <header class="intro">
+      <span class="cab-seccion__ojo">El rincón del terror</span>
+      <h1 class="titulo-decorativo intro__titulo">Lo que queda cuando pasan</h1>
+      <p class="entradilla">
+        Objetos y lugares que la Compaña deja marcados a su paso. Si alguno te suena
+        de tu pueblo, ya sabes por qué nadie habla de noche.
+      </p>
+    </header>
+
+    <!-- Galeria en rejilla: imagenes pequenas, todas del mismo tamaño -->
+    <div class="galeria">
+      @for (lugar of lugares; track lugar.titulo) {
+        <figure class="pieza">
+          <div class="pieza__foto">
+            <img [src]="lugar.imagen" [alt]="lugar.titulo" loading="lazy" />
+            <span class="pieza__velo"></span>
+            <span class="pieza__lugar">{{ lugar.lugar }}</span>
+          </div>
+          <figcaption class="pieza__texto">
+            <h2 class="pieza__titulo">{{ lugar.titulo }}</h2>
+            <p class="pieza__frase">{{ lugar.frase }}</p>
+          </figcaption>
+        </figure>
+      }
+    </div>
+
+    <div class="erizo"></div>
+
+    <section>
+      <header class="cab-seccion">
+        <span class="cab-seccion__ojo">Protección</span>
+        <h2 class="cab-seccion__titulo">Cómo se libra uno</h2>
+      </header>
+      <ol class="pasos">
+        @for (paso of pasos; track paso; let i = $index) {
+          <li>
+            <span class="pasos__num">{{ (i + 1).toString().padStart(2, '0') }}</span>
+            <span class="pasos__texto">{{ paso }}</span>
+          </li>
+        }
+      </ol>
+    </section>
+
+    <p class="pie">halloween-santacompana · galería</p>
+  </div>
+</ion-content>

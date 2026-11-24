@@ -1,0 +1,226 @@
+@import "@ionic/angular/css/core.css";
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+@import "@ionic/angular/css/palettes/dark.always.css";
+
+/* ============================================================
+   BASE
+   ============================================================ */
+
+body {
+  background: var(--noche);
+}
+
+/* Fondo de todas las pantallas: noche con un poco de niebla arriba */
+ion-content.pantalla {
+  --background:
+    radial-gradient(120% 42% at 82% -6%, rgba(38, 24, 66, .85) 0%, rgba(11, 7, 20, 0) 62%),
+    radial-gradient(80% 30% at 8% 4%, rgba(160, 28, 46, .16) 0%, rgba(11, 7, 20, 0) 70%),
+    linear-gradient(180deg, #0b0714 0%, #08050f 60%, #060409 100%);
+}
+
+/* Contenedor: en el movil ocupa todo, en escritorio no pasa de 680px
+   y queda centrado. Asi el contenido nunca se estira de mas. */
+.contenedor {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 18px 18px 26px;
+}
+
+/* ============================================================
+   IMAGENES
+   Todas van dentro de un marco con proporcion fija y altura
+   maxima, para que ninguna se haga gigante.
+   ============================================================ */
+
+.marco {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  border-radius: 16px;
+  background: #0a0712;
+  border: 1px solid rgba(255, 196, 107, .16);
+}
+
+.marco img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(.92) contrast(1.04);
+}
+
+/* 16:9 con tope de 220px de alto */
+.marco--ancho {
+  aspect-ratio: 16 / 9;
+  max-height: 220px;
+}
+
+/* 4:3 con tope de 190px */
+.marco--medio {
+  aspect-ratio: 4 / 3;
+  max-height: 190px;
+}
+
+/* Cuadrado pequeno, para miniaturas */
+.marco--cuadrado {
+  aspect-ratio: 1 / 1;
+  max-height: 132px;
+}
+
+/* Velo oscuro para poner texto encima de la foto */
+.marco__velo {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(6, 4, 9, .96) 4%, rgba(6, 4, 9, .35) 46%, transparent 78%);
+  pointer-events: none;
+}
+
+.marco__pie {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 12px 14px;
+  font-size: .84rem;
+  font-style: italic;
+  line-height: 1.4;
+  color: rgba(236, 228, 216, .9);
+}
+
+/* ============================================================
+   TIPOGRAFIA
+   ============================================================ */
+
+.titulo-decorativo {
+  font-family: 'Cinzel Decorative', 'Cinzel', Georgia, serif;
+  font-weight: 700;
+  letter-spacing: .01em;
+  color: var(--hueso);
+}
+
+/* Cabecera de seccion: una linea pequena en mayusculas y el titulo */
+.cab-seccion {
+  margin: 0 0 12px;
+}
+
+.cab-seccion__ojo {
+  display: block;
+  margin-bottom: 5px;
+  font-family: 'Cinzel', Georgia, serif;
+  font-size: .6rem;
+  letter-spacing: .26em;
+  text-transform: uppercase;
+  color: rgba(255, 207, 135, .72);
+}
+
+.cab-seccion__titulo {
+  margin: 0;
+  font-family: 'Cinzel Decorative', 'Cinzel', Georgia, serif;
+  font-size: 1.16rem;
+  line-height: 1.25;
+  color: var(--hueso);
+}
+
+.entradilla {
+  margin: 0 0 16px;
+  font-size: .96rem;
+  line-height: 1.65;
+  color: var(--texto-suave);
+}
+
+.texto {
+  margin: 0 0 12px;
+  font-size: .95rem;
+  line-height: 1.7;
+  color: var(--texto-suave);
+}
+
+/* Separador con un punto de luz en medio */
+.erizo {
+  position: relative;
+  height: 1px;
+  margin: 24px 0 22px;
+  background: linear-gradient(90deg, transparent, rgba(255, 196, 107, .3), transparent);
+}
+
+.erizo::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 5px;
+  height: 5px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: var(--cirio);
+  box-shadow: 0 0 10px rgba(255, 154, 46, .9);
+}
+
+/* Etiquetas pequenas (chips) */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.chips li {
+  padding: 4px 11px;
+  font-family: 'Cinzel', Georgia, serif;
+  font-size: .6rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: rgba(255, 207, 135, .9);
+  background: rgba(160, 28, 46, .16);
+  border: 1px solid rgba(255, 196, 107, .22);
+  border-radius: 999px;
+}
+
+.pie {
+  margin: 24px 0 4px;
+  text-align: center;
+  font-family: 'Cinzel', Georgia, serif;
+  font-size: .62rem;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: rgba(168, 182, 216, .38);
+}
+
+/* Aparicion suave */
+@keyframes subir {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Barra superior comun a las tres pestanas */
+.cabecera ion-toolbar {
+  --background: rgba(6, 4, 9, .92);
+  --border-color: rgba(255, 196, 107, .12);
+  --min-height: 54px;
+  font-family: 'Cinzel', Georgia, serif;
+}
+
+.cabecera ion-title {
+  padding-inline: 18px;
+  font-size: .92rem;
+  font-weight: 600;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--cirio-claro);
+}
+
+/* En escritorio centramos el contenido y dejamos aire arriba */
+@media (min-width: 720px) {
+  .contenedor { padding: 26px 24px 34px; }
+}

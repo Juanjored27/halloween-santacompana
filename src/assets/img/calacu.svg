@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="Calabaza tallada con una vela dentro, tipica de Halloween">
+  <defs>
+    <radialGradient id="bg6" cx=".5" cy=".55" r=".8">
+      <stop offset="0" stop-color="#2b1a44"/><stop offset=".62" stop-color="#110c1c"/><stop offset="1" stop-color="#06040b"/>
+    </radialGradient>
+    <radialGradient id="pump" cx=".42" cy=".38" r=".75">
+      <stop offset="0" stop-color="#f08a2a"/><stop offset=".5" stop-color="#c85f14"/><stop offset="1" stop-color="#5f2a08"/>
+    </radialGradient>
+    <radialGradient id="inner">
+      <stop offset="0" stop-color="#fff2c9"/><stop offset=".55" stop-color="#ffa93c" stop-opacity=".75"/>
+      <stop offset="1" stop-color="#ff7a18" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="f14"><feGaussianBlur stdDeviation="14"/></filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg6)"/>
+  <circle cx="400" cy="330" r="280" fill="url(#inner)" opacity=".16"/>
+  <ellipse cx="400" cy="500" rx="180" ry="26" fill="#1a1326"/>
+  <ellipse cx="400" cy="300" rx="150" ry="130" fill="url(#pump)"/>
+  <ellipse cx="305" cy="300" rx="52" ry="122" fill="url(#pump)"/>
+  <ellipse cx="495" cy="300" rx="52" ry="122" fill="url(#pump)"/>
+  <ellipse cx="400" cy="300" rx="70" ry="126" fill="url(#pump)" opacity=".9"/>
+  <path d="M400 172 C 412 156 412 140 402 132 C 396 138 392 150 394 160 Z" fill="#4a5c2a"/>
+  <g fill="#12060c">
+    <path d="M330 262 L372 250 L344 292 Z"/>
+    <path d="M470 262 L428 250 L456 292 Z"/>
+    <path d="M400 320 L352 356 L400 384 L448 356 Z" opacity=".95"/>
+    <path d="M352 356 L330 344 M448 356 L470 344" stroke="#12060c" stroke-width="7"/>
+  </g>
+  <g fill="#ffd27a" opacity=".85">
+    <path d="M334 262 L370 252 L348 286 Z"/><path d="M466 262 L430 252 L452 286 Z"/>
+    <path d="M400 330 L366 354 L400 372 L434 354 Z"/>
+  </g>
+  <circle cx="400" cy="320" r="150" fill="url(#inner)" filter="url(#f14)" opacity=".45"/>
+  <g filter="url(#f14)" opacity=".18">
+    <ellipse cx="400" cy="500" rx="360" ry="34" fill="#9fb0da"/>
+    <ellipse cx="180" cy="460" rx="240" ry="26" fill="#8fa4cf"/>
+  </g>
+  <path d="M0 560 C 240 546 560 546 800 560 L800 600 L0 600 Z" fill="#05030a"/>
+</svg>

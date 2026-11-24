@@ -1,0 +1,76 @@
+/* ---------- Cabecera de la pestana ---------- */
+.intro__titulo {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+/* ---------- Imagen de ambiente ---------- */
+.ambiente {
+  margin-bottom: 4px;
+}
+
+/* ---------- Texto ---------- */
+.nota-seccion {
+  margin: -4px 0 14px;
+  font-size: .8rem;
+  font-style: italic;
+  color: rgba(168, 182, 216, .6);
+}
+
+/* ---------- Tarjetas del componente ---------- */
+.ficha {
+  display: block;
+  margin-bottom: 14px;
+}
+
+/* ---------- Aviso al pulsar el boton ---------- */
+.aviso {
+  display: flex;
+  gap: 9px;
+  align-items: flex-start;
+  margin: 4px 0 0;
+  padding: 11px 13px;
+  font-size: .86rem;
+  line-height: 1.45;
+  color: var(--cirio-claro);
+  background: rgba(160, 28, 46, .2);
+  border: 1px solid rgba(255, 196, 107, .26);
+  border-radius: 10px;
+  animation: subir .3s ease both;
+}
+
+.aviso ion-icon {
+  flex-shrink: 0;
+  margin-top: 2px;
+  font-size: 16px;
+}
+
+/* ---------- Lista de curiosidades ---------- */
+.lista {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lista li {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0;
+  font-size: .93rem;
+  line-height: 1.6;
+  color: var(--texto-suave);
+  border-bottom: 1px dashed rgba(255, 196, 107, .1);
+}
+
+.lista li:last-child {
+  border-bottom: 0;
+}
+
+.lista ion-icon {
+  flex-shrink: 0;
+  margin-top: 5px;
+  font-size: 12px;
+  color: var(--sangre);
+  filter: drop-shadow(0 0 6px rgba(160, 28, 46, .9));
+}

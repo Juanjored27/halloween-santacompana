@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="Cruceiro de piedra en un cementerio con luna llena">
+  <defs>
+    <linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#07050e"/><stop offset=".55" stop-color="#1d1233"/><stop offset="1" stop-color="#0a0611"/>
+    </linearGradient>
+    <radialGradient id="halo2">
+      <stop offset="0" stop-color="#e7ecff" stop-opacity=".4"/>
+      <stop offset=".55" stop-color="#9fb0da" stop-opacity=".1"/>
+      <stop offset="1" stop-color="#9fb0da" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="stone" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2b2637"/><stop offset=".45" stop-color="#4a4459"/>
+      <stop offset=".75" stop-color="#332e40"/><stop offset="1" stop-color="#1d1a27"/>
+    </linearGradient>
+    <filter id="b18"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#sky2)"/>
+  <circle cx="250" cy="150" r="190" fill="url(#halo2)"/>
+  <circle cx="250" cy="150" r="46" fill="#eef1ff" opacity=".88"/>
+  <g fill="#fff"><circle cx="520" cy="80" r="1.6" opacity=".6"/><circle cx="640" cy="140" r="1.3" opacity=".5"/>
+    <circle cx="710" cy="60" r="1.8" opacity=".6"/><circle cx="430" cy="40" r="1.2" opacity=".5"/><circle cx="90" cy="60" r="1.4" opacity=".5"/></g>
+  <path d="M0 470 C 200 440 600 440 800 470 L800 600 L0 600 Z" fill="#0d0917"/>
+  <g fill="#151020">
+    <path d="M120 470 L120 420 L136 420 L136 470 Z"/><path d="M120 430 L136 430" stroke="#151020" stroke-width="8"/>
+    <path d="M660 460 L660 400 L674 400 L674 460 Z"/><path d="M654 412 L680 412" stroke="#151020" stroke-width="8"/>
+    <path d="M560 470 L560 438 L572 438 L572 470 Z"/><path d="M556 444 L576 444" stroke="#151020" stroke-width="6"/>
+  </g>
+  <ellipse cx="400" cy="500" rx="200" ry="34" fill="#231a33" opacity=".55"/>
+  <path d="M378 500 L422 500 L414 470 L386 470 Z" fill="#221d2c"/>
+  <rect x="386" y="200" width="28" height="272" fill="url(#stone)"/>
+  <rect x="352" y="168" width="96" height="26" rx="4" fill="url(#stone)"/>
+  <rect x="372" y="230" width="60" height="70" rx="6" fill="#2a2536"/>
+  <path d="M380 290 L400 246 L420 290 Z" fill="#1a1622"/>
+  <circle cx="400" cy="278" r="7" fill="#0f0c16"/>
+  <g stroke="#4a4459" stroke-width="2" opacity=".6">
+    <path d="M386 340 L414 340 M386 360 L414 360 M386 380 L414 380"/>
+  </g>
+  <path d="M330 470 L400 440 L470 470 L470 500 L330 500 Z" fill="#241f30" opacity=".8"/>
+  <g filter="url(#b18)" opacity=".2">
+    <ellipse cx="400" cy="510" rx="380" ry="44" fill="#9fb0da"/>
+    <ellipse cx="180" cy="556" rx="260" ry="30" fill="#8fa4cf"/>
+  </g>
+  <path d="M0 570 C 200 556 600 556 800 570 L800 600 L0 600 Z" fill="#05030a"/>
+</svg>

@@ -1,0 +1,43 @@
+<article class="tarjeta">
+  <span class="esquina esquina--tl"></span>
+  <span class="esquina esquina--tr"></span>
+  <span class="esquina esquina--bl"></span>
+  <span class="esquina esquina--br"></span>
+
+  <!-- Brillo de cirio que se mueve despacio por detras del contenido -->
+  <span class="brillo" aria-hidden="true"></span>
+
+  <!-- Silueta de anima encapuchada de fondo -->
+  <svg class="anima" viewBox="0 0 200 320" aria-hidden="true">
+    <path d="M100 0 C 60 0 34 46 34 104 C 34 158 16 214 0 260 L 0 320 L 200 320 L 200 260 C 184 214 166 158 166 104 C 166 46 140 0 100 0 Z" fill="currentColor"/>
+    <ellipse cx="78" cy="112" rx="22" ry="30" fill="#05030a"/>
+  </svg>
+
+  @if (imagen) {
+    <figure class="figura">
+      <img [src]="imagen" [alt]="titulo" loading="lazy" />
+      <span class="figura__velo"></span>
+    </figure>
+  }
+
+  <div class="cuerpo">
+    @if (etiqueta) {
+      <span class="etiqueta">{{ etiqueta }}</span>
+    }
+
+    <h3 class="titulo">{{ titulo }}</h3>
+
+    <div class="filete" aria-hidden="true"><span></span></div>
+
+    <p class="texto">{{ texto }}</p>
+
+    <button class="boton" type="button" (click)="pulsar()">
+      <svg class="boton__icono" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 2c1.6 3.2 4.6 5.1 4.6 9.2A4.6 4.6 0 0 1 12 16a4.6 4.6 0 0 1-4.6-4.8C7.4 7.1 10.4 5.2 12 2Z" fill="currentColor"/>
+        <path d="M12 10c.8 1.4 1.9 2.2 1.9 3.6A1.9 1.9 0 0 1 12 15.4a1.9 1.9 0 0 1-1.9-1.8C10.1 12.2 11.2 11.4 12 10Z" fill="#2b1a0a"/>
+        <path d="M3 21h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+      {{ botonTexto }}
+    </button>
+  </div>
+</article>

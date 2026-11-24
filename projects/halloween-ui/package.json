@@ -1,0 +1,16 @@
+{
+  "name": "halloween-ui",
+  "version": "1.0.0",
+  "description": "Libreria de componentes con tematica de Halloween. Incluye la tarjeta de monstruo (monster-card) reutilizable para las apps de la coleccion.",
+  "author": "Alumno DAM - La Santa Compaña",
+  "license": "MIT",
+  "keywords": ["ionic", "angular", "halloween", "componentes", "ui"],
+  "peerDependencies": {
+    "@angular/common": "^22.2.0",
+    "@angular/core": "^22.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}

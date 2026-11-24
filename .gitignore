@@ -1,0 +1,21 @@
+# Dependencias
+node_modules/
+
+# Compilado
+dist/
+www/
+.angular/
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.log
+
+# Editores
+.vscode/
+.idea/
+
+# Temporales y borradores del informe Word
+~$*.docx
+Informe_Entrega_Santa_Compana.docx
+Informe_Entrega_Santa_Compana.docx.tmp

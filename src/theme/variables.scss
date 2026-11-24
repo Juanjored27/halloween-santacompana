@@ -1,0 +1,41 @@
+/* Paleta de la app: noche gallega, niebla, cera y sangre. */
+
+:root {
+  /* Fondos */
+  --noche: #060409;
+  --carbon: #0b0714;
+  --morado: #1b1030;
+  --morado-2: #261842;
+
+  /* Luces y acentos */
+  --cirio: #ff9a2e;
+  --cirio-claro: #ffcf87;
+  --hueso: #f2ebdd;
+  --niebla: #a8b6d8;
+  --sangre: #a01c2e;
+  --monte: #4a5c2a;
+
+  /* Texto */
+  --texto: #ece4d8;
+  --texto-suave: #b9b0ac;
+
+  /* Ionic */
+  --ion-background-color: var(--carbon, #0b0714);
+  --ion-text-color: var(--texto);
+  --ion-font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
+
+  --ion-color-primary: #ff9a2e;
+  --ion-color-primary-rgb: 255, 154, 46;
+  --ion-color-primary-contrast: #1a0f04;
+  --ion-color-primary-shade: #e08829;
+  --ion-color-primary-tint: #ffa443;
+
+  --ion-color-secondary: #a01c2e;
+  --ion-color-secondary-rgb: 160, 28, 46;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-shade: #8d1928;
+  --ion-color-secondary-tint: #aa3343;
+
+  --ion-toolbar-background: rgba(6, 4, 9, .96);
+  --ion-tab-bar-background: #0b0714;
+}

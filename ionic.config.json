@@ -1,0 +1,7 @@
+{
+  "name": "halloween-santacompana",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
